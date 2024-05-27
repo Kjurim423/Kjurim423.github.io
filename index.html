@@ -1,0 +1,144 @@
+<!--Name: Julim Kwak
+    Student ID: 20113240
+    Date: 20/05/2024
+    Subject: DLD AT5 Therapy Clinic project
+    Topic: layout, grid, flexbox, images, 
+    testing, media query, responsive design, multipage-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Clinic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <!-- preload big images -->
+  <link rel="preload" href="images/profile.png" as="image">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <img src="images/clinic-logo2.png" alt="Company Logo" class="logo-large" width="250" height="100">
+      <img src="images/clinic-logo3.png" alt="Company Logo" class="logo-small" width="188" height="75">
+      <!-- clinic logos created on Canva -->
+      <figure class="menu-icon" onclick="toggleMenu()">☰</figure>       
+      <nav class="menu-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>         
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Bookings</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+    <main class="main-home">
+      <section id="hero">    
+        <section class="slider-wrapper">
+          <img src="images/profile.webp" alt="Therapist profile" class="profile-overlay">
+          <figure class="slider">
+            <figure class="slide">
+                <img src="images/clinic-images.webp" alt="Interior of the clinic">                
+            </figure>
+            <figure class="slide">
+                <img src="images/clinic-images1.webp" alt="Interior of the clinic">               
+            </figure>
+            <figure class="slide">
+                <img src="images/clinic-images2.webp" alt="Interior of the clinic">               
+            </figure>
+            <figure class="slide">
+                <img src="images/clinic-images3.webp" alt="A therapy session in progress">                
+            </figure>
+        </figure>
+        
+          <aside class="cta-overlay">
+            <h2>Book an appointment today</h2>           
+            <button onclick="location.href='booking.html'">Book Online</button>           
+          </aside>
+          <nav>
+            <button class="slide-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="slide-btn next" onclick="moveSlide(1)">❯</button>
+          </nav>
+        </section>
+      </section>
+      <section id="importance-of-therapy">
+        <h2>The Importance of Therapy</h2>
+        <p>Therapy is essential in managing mental health, providing support, and offering tools to deal with challenges
+          and emotional crises. Regular sessions can lead to significant improvements in quality of life and are vital
+          in coping with mental health disorders.</p>
+      </section>
+      <figure id="testimonial-1">
+        <img src="images/testimonial2.png" alt="testimonial" width="200" height="280">
+        <!-- testimonial image created on Canva -->
+      </figure>
+      <blockquote cite="http://example.com/famous-therapist">
+        <p>"The good life is a process, not a state of being. It is a direction, not a destination." - Carl Rogers</p>
+      </blockquote>
+
+      <figure id="testimonial-2">
+        <img src="images/testimonial2.png" alt="testimonial" width="200" height="280">
+        <!-- testimonial image created on Canva -->
+      </figure>     
+
+      <section id="expected-outcomes">
+        <h2>Expected Outcomes of Therapy</h2>
+        <ul>
+          <li>Improved communication and interpersonal skills</li>
+          <li>Greater self-acceptance and self-esteem</li>
+          <li>Ability to change self-defeating behaviors/habits</li>
+          <li>Better expression and management of emotions, including anger</li>
+          <li>Relief from depression, anxiety, and other mental health conditions</li>
+        </ul>
+      </section>
+
+    </main>
+    <footer>
+      <section id="contact-us">
+        <h3>Contact Us</h3>
+        <p>Phone: (08) 456 7890<br>
+        <a href="mailto:info@therapyclinic.com">email: info@therapyclinic.com</a>
+        </p>
+      </section>
+      <section id="location">
+        <h3>Location</h3>
+        <p>
+          123 Wellbing St.<br>
+          Happy City, WA, 1234<br>
+        </p>
+      </section>
+      <section id="opening-hours">        
+        <h3>Opening hours:</h3>
+        <p>
+          Monday to Thurs 8:30am - 7:30pm<br>
+          Friday 8:30am - 4:30pm<br>
+          Saturday 8:30am - 2:30pm<br>
+        </p>
+      </section>
+      <section id="follow-us">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><img src="images/facebook_icon.webp" alt="facebook icon"></a></li>          
+          <li><a href="#"><img src="images/twitter_icon.webp" alt="twitter icon"></a></li>
+          <li><a href="#"><img src="images/instagram_icon.webp" alt="Instagram icon"></a></li>
+          <!-- social media icons downloaded from https://icons8.com/icons/set/social-media -->
+        </ul>
+      </section>
+      <section id="subscribe">
+        <h3>Subscribe Newsletters</h3>
+        <input type="text" placeholder="email...">
+        <button>Subscribe</button>
+      </section>
+      <section id="copyright">
+        <h3>Disclaimer</h3>
+        <p>
+          Copyright © 2024 Perth Therapy Clinic. All Rights Reserved. 
+          <a href="documents/PrivacyPolicy.pdf" target="_blank">Privacy Policy.</a>
+        </p>
+      </section>      
+    </footer>
+  </div>
+</body>
+</html>
